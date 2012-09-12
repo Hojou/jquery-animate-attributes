@@ -1,12 +1,21 @@
 (function($){
     $.fn.extend({ 
         //plugin name - attrimate
-        attrimate: function(attributeName, attributeValue, callback) {
+        attrimate: function(attributes, callback) {
+
+            var me = this;
+
+            var animate = function(el, attributeName, attributeValue) {
+
+            };
          
             return this.each(function() {
-                var me = $(this);              
+                var item = $(this);              
                 
-                me.attr(attributeName, attributeValue);
+                for (var i in attributes) {
+                    console.log(i + '.' + attributes[i], item, me);
+                }
+                
                  
             });
         }
