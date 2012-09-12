@@ -5,18 +5,21 @@
 
             var me = this;
 
-            var animate = function(el, attributeName, attributeValue) {
-                el.attr(attributeName, attributeValue);
+            var anim = function(el, attributeName, attributeValue) {
+                el.attr(r, 1);
             };
+
          
             return this.each(function() {
                 var item = $(this);              
-                
+
+/*                
                 for (var i in attributes) {
-                    alert(i + '\n' + attributes[i] + '\n' + item);
-                    me.animate(item, i, attributes[i])
+                    //alert(i + '\n' + attributes[i] + '\n' + item);
+                    console.log(i);
+                    //me.animate(item, i, attributes[i])
                 }
-                
+*/                
                  
             });
         }
