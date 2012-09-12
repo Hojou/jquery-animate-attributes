@@ -13,6 +13,7 @@
                 var item = $(this);              
                 
                 for (var i in attributes) {
+                    alert(i + '\n' + attributes[i]);
                     me.animate(item, i, attributes[i])
                 }
                 
