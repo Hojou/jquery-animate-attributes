@@ -13,7 +13,7 @@
                 var item = $(this);              
                 
                 for (var i in attributes) {
-                    console.log(i + '.' + attributes[i], item, me);
+                    me.animate(item, i, attributes[i])
                 }
                 
                  
