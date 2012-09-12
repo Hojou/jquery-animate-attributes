@@ -6,7 +6,7 @@
             var me = this;
 
             var animate = function(el, attributeName, attributeValue) {
-
+                el.attr(attributeName, attributeValue);
             };
          
             return this.each(function() {
